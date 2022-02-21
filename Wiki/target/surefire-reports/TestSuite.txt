@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 23.632 s <<< FAILURE! - in TestSuite
+apitest.APITest.findOrderById  Time elapsed: 2.214 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at apitest.APITest.findOrderById(APITest.java:51)
+
+apitest.APITest.getAvailablePetsByStatus  Time elapsed: 1.082 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at apitest.APITest.getAvailablePetsByStatus(APITest.java:40)
+
+apitest.APITest.getInventory  Time elapsed: 0.618 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at apitest.APITest.getInventory(APITest.java:90)
+
+apitest.APITest.userLogin  Time elapsed: 0.602 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at apitest.APITest.userLogin(APITest.java:78)
+
+search.SearchText.getSearchResult  Time elapsed: 1.618 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at search.SearchText.getSearchResult(SearchText.java:66)
+
