@@ -37,7 +37,7 @@ public class BaseCommand {
 
         FileInputStream file = null;
 		try {
-			file = new FileInputStream(System.getProperty("user.dir")+"//src//test//resources//searchconfig.properties");
+			file = new FileInputStream(System.getProperty("user.dir")+"//src//main//resources//searchconfig.properties");
 			getProperties(file);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block

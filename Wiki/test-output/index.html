@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 4 failed,   4 passed</span>
+                    <span class="method-stats">8 methods, 3 failed,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -107,17 +107,12 @@
                       <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apitest.APITest" hash-for-method="getAvailablePetsByStatus">getAvailablePetsByStatus</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apitest.APITest" hash-for-method="getInventory">getInventory</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="search.SearchText" hash-for-method="getSearchResult">getSearchResult</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apitest.APITest" hash-for-method="userLogin">userLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -129,6 +124,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apitest.APITest" hash-for-method="getAvailablePetsByStatus">getAvailablePetsByStatus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="search.SearchText" hash-for-method="getPageTitle">getPageTitle</a> <!-- method navigator-link -->
@@ -146,7 +146,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apitest.APITest" hash-for-method="userLogin">userLogin</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="search.SearchText" hash-for-method="getSearchResult">getSearchResult</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -180,17 +180,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="getAvailablePetsByStatus">
-                  </a> <!-- getAvailablePetsByStatus -->
-                  <span class="method-name">getAvailablePetsByStatus</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at apitest.APITest.getAvailablePetsByStatus(APITest.java:40)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="getInventory">
                   </a> <!-- getInventory -->
                   <span class="method-name">getInventory</span>
@@ -200,21 +189,13 @@
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">search.SearchText</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getSearchResult">
-                  </a> <!-- getSearchResult -->
-                  <span class="method-name">getSearchResult</span>
+                  <a name="userLogin">
+                  </a> <!-- userLogin -->
+                  <span class="method-name">userLogin</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at search.SearchText.getSearchResult(SearchText.java:66)
+	at apitest.APITest.userLogin(APITest.java:78)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -229,16 +210,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getPetDetails">
-                  </a> <!-- getPetDetails -->
-                  <span class="method-name">getPetDetails</span>
+                  <a name="getAvailablePetsByStatus">
+                  </a> <!-- getAvailablePetsByStatus -->
+                  <span class="method-name">getAvailablePetsByStatus</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="userLogin">
-                  </a> <!-- userLogin -->
-                  <span class="method-name">userLogin</span>
+                  <a name="getPetDetails">
+                  </a> <!-- getPetDetails -->
+                  <span class="method-name">getPetDetails</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -261,6 +242,13 @@
                   <a name="getScreenshot">
                   </a> <!-- getScreenshot -->
                   <span class="method-name">getScreenshot</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getSearchResult">
+                  </a> <!-- getSearchResult -->
+                  <span class="method-name">getSearchResult</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -322,31 +310,31 @@ data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'findOrderById')
 data.setCell(0, 2, 'apitest.APITest')
-data.setCell(0, 3, 3465);
+data.setCell(0, 3, 2084);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'getScreenshot')
 data.setCell(1, 2, 'search.SearchText')
-data.setCell(1, 3, 1822);
+data.setCell(1, 3, 1272);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'getSearchResult')
 data.setCell(2, 2, 'search.SearchText')
-data.setCell(2, 3, 1567);
+data.setCell(2, 3, 1180);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'userLogin')
+data.setCell(3, 1, 'getAvailablePetsByStatus')
 data.setCell(3, 2, 'apitest.APITest')
-data.setCell(3, 3, 1187);
+data.setCell(3, 3, 1038);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'getAvailablePetsByStatus')
+data.setCell(4, 1, 'userLogin')
 data.setCell(4, 2, 'apitest.APITest')
-data.setCell(4, 3, 1012);
+data.setCell(4, 3, 743);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'getPetDetails')
 data.setCell(5, 2, 'apitest.APITest')
-data.setCell(5, 3, 635);
+data.setCell(5, 3, 625);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'getInventory')
 data.setCell(6, 2, 'apitest.APITest')
-data.setCell(6, 3, 593);
+data.setCell(6, 3, 610);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'getPageTitle')
 data.setCell(7, 2, 'search.SearchText')
@@ -355,7 +343,7 @@ window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -389,65 +377,63 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">getAvailablePetsByStatus</span>
-                <span class="method-start">3468 ms</span>
+                <span class="method-start">2086 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">getInventory</span>
-                <span class="method-start">4482 ms</span>
+                <span class="method-start">3126 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">getPetDetails</span>
-                <span class="method-start">5077 ms</span>
+                <span class="method-start">3737 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">userLogin</span>
-                <span class="method-start">5713 ms</span>
+                <span class="method-start">4364 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">search.SearchText</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">getBrowser</span>
-                <span class="method-start">6903 ms</span>
+                <span class="method-start">5109 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getPageTitle</span>
-                <span class="method-start">11631 ms</span>
+                <span class="method-start">7895 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11640 ms</span>
+                <span class="method-start">7904 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getBrowser</span>
-                <span class="method-start">12842 ms</span>
+                <span class="method-start">8865 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getScreenshot</span>
-                <span class="method-start">16811 ms</span>
+                <span class="method-start">11288 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">18634 ms</span>
+                <span class="method-start">12560 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">getBrowser</span>
-                <span class="method-start">19847 ms</span>
+                <span class="method-start">13486 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">getSearchResult</span>
-                <span class="method-start">23430 ms</span>
+                <span class="method-start">15797 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">24998 ms</span>
+                <span class="method-start">16978 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

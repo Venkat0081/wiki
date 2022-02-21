@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="apitest.APITest">
+      <class name="search.SearchText">
         <methods>
-          <include name="getAvailablePetsByStatus"/>
-          <include name="userLogin"/>
-          <include name="findOrderById"/>
-          <include name="getInventory"/>
+          <include name="getBrowser"/>
+          <include name="tearDown"/>
+          <include name="getSearchResult"/>
         </methods>
-      </class> <!-- apitest.APITest -->
+      </class> <!-- search.SearchText -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

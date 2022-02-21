@@ -5,18 +5,11 @@
     <classes>
       <class name="apitest.APITest">
         <methods>
-          <include name="getAvailablePetsByStatus"/>
+          <include name="userLogin"/>
           <include name="findOrderById"/>
           <include name="getInventory"/>
         </methods>
       </class> <!-- apitest.APITest -->
-      <class name="search.SearchText">
-        <methods>
-          <include name="getBrowser"/>
-          <include name="tearDown"/>
-          <include name="getSearchResult"/>
-        </methods>
-      </class> <!-- search.SearchText -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
