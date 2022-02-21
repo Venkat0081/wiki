@@ -59,12 +59,9 @@ public class SearchText extends BaseCommand{
 		if (searchResults != null && searchResults.size() > 0) {
 			WebElement searchResult= searchResults.iterator().next();
 			searchResulttArray = searchResult.getText().split(" ");
-			System.out.println("searchResult.getText()---" + searchResult.getText());
 			if(searchResulttArray!= null && searchResulttArray.length > 0) {
 				for (String str : searchTextArray) {
-					System.out.println("String ---" + str);
 					boolean doesContain = Arrays.stream(searchResulttArray).anyMatch(x -> x.equalsIgnoreCase(str));
-					System.out.println("doesContain ---" + doesContain);
 
 					Assert.assertTrue(doesContain);
 				}
